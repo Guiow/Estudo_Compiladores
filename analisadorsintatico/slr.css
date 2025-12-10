@@ -1,0 +1,199 @@
+/*
+ * Estilos para o SLR Parser Generator
+ * Arquivo de estilos CSS para a interface do analisador sintático SLR
+ */
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0f1115;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo para tabelas principais */
+table {
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+/* Estilo para células de tabela */
+td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+/* Estilo para áreas de texto */
+textarea {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    background-color: #1a1d24;
+    color: #e0e0e0;
+    border: 1px solid #3a3d44;
+    resize: vertical;
+}
+
+/* Área de texto somente leitura (índices de regras) */
+textarea[readonly] {
+    background-color: #0f1115;
+    border: 0;
+    color: #4caf50;
+    text-align: right;
+}
+
+/* Estilo para inputs de texto */
+input[type="text"] {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1a1d24;
+    color: #e0e0e0;
+    border: 1px solid #3a3d44;
+    padding: 5px;
+}
+
+/* Força a cor branca no campo maximumStepCount */
+#maximumStepCount {
+    color: #e0e0e0 !important;
+}
+
+/* Input válido (aceito) */
+input[type="text"][style*="color: green"] {
+    border-color: #4caf50;
+}
+
+/* Input inválido (rejeitado) */
+input[type="text"][style*="color: red"] {
+    border-color: #f44336;
+}
+
+/* Input incompleto (limite atingido) */
+input[type="text"][style*="color: orange"] {
+    border-color: #ff9800;
+}
+
+/* Estilo para botões */
+input[type="button"] {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="button"]:hover {
+    background-color: #1976d2;
+}
+
+/* Estilo para botões de rádio */
+input[type="radio"] {
+    cursor: pointer;
+}
+
+/* Cabeçalhos de tabela */
+th {
+    background-color: #2196f3;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Células de tabela com borda */
+table[border="1"] td,
+table[border="1"] th {
+    border: 1px solid #3a3d44;
+}
+
+/* Remove a borda azul grossa da tabela de movimento da pilha */
+table[border="6"] {
+    border: 1px solid #3a3d44;
+}
+
+/* Divisores horizontais */
+hr {
+    border: 0;
+    height: 1px;
+    background: #3a3d44;
+    margin: 20px 0;
+}
+
+/* Estilo para spans com cores específicas */
+span[style*="color: green"] {
+    color: #4caf50 !important;
+}
+
+span[style*="color: blue"],
+span[style*="color: bue"],
+span[style*="color: blu"] {
+    color: #2196f3 !important;
+}
+
+span[style*="color: red"] {
+    color: #f44336 !important;
+}
+
+span[style*="color: orange"] {
+    color: #ff9800 !important;
+}
+
+span[style*="color: gren"] {
+    color: #4caf50 !important;
+}
+
+/* Estilo para divs específicos */
+#grammarView,
+#firstFollowView,
+#lrClosureTableView,
+#lrTableView,
+#lrParseView {
+    margin: 10px 0;
+}
+
+/* Estilo para células coloridas (estados) */
+td[style*="color: blue"],
+td[style*="color: bue"],
+td[style*="color: blu"] {
+    color: #2196f3 !important;
+    font-weight: bold;
+}
+
+/* Estilo para sub-índices */
+sub {
+    font-size: 0.8em;
+    vertical-align: sub;
+}
+
+/* Estilo para a célula da árvore */
+#tree {
+    background-color: #1a1d24;
+    padding: 15px;
+}
+
+/* Estilo para tabelas aninhadas (árvore de derivação) */
+table table {
+    margin: 5px auto;
+    background-color: #1a1d24;
+}
+
+table table th {
+    background-color: #3a3d44;
+    color: #e0e0e0;
+}
+
+/* Responsividade básica */
+@media screen and (max-width: 1200px) {
+    body {
+        padding: 10px;
+        font-size: 11px;
+    }
+    
+    textarea {
+        font-size: 11px;
+    }
+    
+    table {
+        font-size: 11px;
+    }
+}
